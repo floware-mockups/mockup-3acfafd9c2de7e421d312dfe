@@ -342,6 +342,85 @@
       ],
       "chartColumn": 0,
       "statusColumn": 3
+    },
+    {
+      "id": "ricorsi-cittadinanza",
+      "title": "Ricorsi in materia di cittadinanza",
+      "description": "Registro dimostrativo di ricorsi inventati, con stato, motivazione sintetica e prossima scadenza. Le informazioni non costituiscono valutazioni legali.",
+      "metrics": [
+        {
+          "label": "Ricorsi dimostrativi",
+          "value": "6"
+        },
+        {
+          "label": "Da esaminare",
+          "value": "2"
+        },
+        {
+          "label": "In preparazione o revisione",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice ricorso",
+        "Tipo di ricorso",
+        "Motivo sintetico",
+        "Stato",
+        "Prossima scadenza"
+      ],
+      "rows": [
+        [
+          "RIC-3101",
+          "Riconoscimento della cittadinanza",
+          "Tempi di conclusione del procedimento",
+          "Da esaminare",
+          "22/05/2026"
+        ],
+        [
+          "RIC-3102",
+          "Riconoscimento della cittadinanza",
+          "Valutazione della documentazione",
+          "In preparazione",
+          "29/05/2026"
+        ],
+        [
+          "RIC-3103",
+          "Cittadinanza per matrimonio",
+          "Richiesta di riesame del provvedimento",
+          "Da esaminare",
+          "05/06/2026"
+        ],
+        [
+          "RIC-3104",
+          "Cittadinanza per discendenza",
+          "Verifica della documentazione presentata",
+          "In attesa di integrazione",
+          "12/06/2026"
+        ],
+        [
+          "RIC-3105",
+          "Riconoscimento della cittadinanza",
+          "Richiesta di accesso agli atti",
+          "Depositato",
+          "19/06/2026"
+        ],
+        [
+          "RIC-3106",
+          "Cittadinanza per matrimonio",
+          "Esame delle ragioni del ricorso",
+          "In revisione",
+          "26/06/2026"
+        ]
+      ],
+      "form": [
+        "Codice ricorso",
+        "Tipo di ricorso",
+        "Motivo sintetico",
+        "Stato",
+        "Prossima scadenza"
+      ],
+      "statusColumn": 3,
+      "chartColumn": 3
     }
   ],
   "theme": {
