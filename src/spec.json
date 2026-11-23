@@ -1,0 +1,279 @@
+{
+  "title": "Controllo preliminare delle domande di cittadinanza",
+  "description": "Prototipo per esaminare in anteprima la completezza documentale e i requisiti di reddito di pratiche inventate, con esiti provvisori e dati protetti.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo delle pratiche in valutazione preliminare e delle verifiche da completare.",
+      "metrics": [
+        {
+          "label": "Pratiche in anteprima",
+          "value": "24"
+        },
+        {
+          "label": "Documenti da verificare",
+          "value": "8"
+        },
+        {
+          "label": "Reddito da approfondire",
+          "value": "5"
+        },
+        {
+          "label": "Verifiche complete",
+          "value": "11"
+        }
+      ],
+      "columns": [
+        "Stato",
+        "Pratica",
+        "Documenti",
+        "Reddito",
+        "Ultimo controllo"
+      ],
+      "rows": [
+        [
+          "Da verificare",
+          "CIT-2041",
+          "3 di 5 presenti",
+          "Da valutare",
+          "12/04/2026"
+        ],
+        [
+          "In revisione",
+          "CIT-2042",
+          "5 di 5 presenti",
+          "Da approfondire",
+          "12/04/2026"
+        ],
+        [
+          "Completa in anteprima",
+          "CIT-2043",
+          "5 di 5 presenti",
+          "Coerente",
+          "11/04/2026"
+        ],
+        [
+          "Da integrare",
+          "CIT-2044",
+          "2 di 5 presenti",
+          "Non valutabile",
+          "11/04/2026"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "pratiche",
+      "title": "Pratiche",
+      "description": "Elenco filtrabile delle domande inventate, con stato delle verifiche documentali e reddituali. Gli esiti sono solo indicativi e non sostituiscono la valutazione istruttoria.",
+      "metrics": [
+        {
+          "label": "Pratiche mostrate",
+          "value": "4"
+        },
+        {
+          "label": "Da integrare",
+          "value": "1"
+        },
+        {
+          "label": "In revisione",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Codice pratica",
+        "Richiedente",
+        "Stato",
+        "Documenti presenti",
+        "Reddito dichiarato",
+        "Esito preliminare"
+      ],
+      "rows": [
+        [
+          "CIT-2041",
+          "Nubi Arvela",
+          "Da verificare",
+          "3/5",
+          "€ 18.400",
+          "Verifica necessaria"
+        ],
+        [
+          "CIT-2042",
+          "Vela Lirune",
+          "In revisione",
+          "5/5",
+          "€ 24.800",
+          "Approfondimento richiesto"
+        ],
+        [
+          "CIT-2043",
+          "Lumo Seravi",
+          "Completa in anteprima",
+          "5/5",
+          "€ 27.200",
+          "Coerente con soglia configurata"
+        ],
+        [
+          "CIT-2044",
+          "Riva Nelori",
+          "Da integrare",
+          "2/5",
+          "Non indicato",
+          "Reddito non valutabile"
+        ]
+      ],
+      "form": [
+        "Codice pratica",
+        "Richiedente",
+        "Stato",
+        "Documenti presenti",
+        "Reddito dichiarato",
+        "Esito preliminare"
+      ]
+    },
+    {
+      "id": "documenti",
+      "title": "Verifica documenti",
+      "description": "Controllo sintetico della presenza e validità dichiarata dei documenti richiesti per ogni pratica.",
+      "metrics": [
+        {
+          "label": "Documenti attesi per pratica",
+          "value": "5"
+        },
+        {
+          "label": "Da controllare",
+          "value": "8"
+        },
+        {
+          "label": "Segnalati mancanti",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Codice pratica",
+        "Richiedente",
+        "Identità",
+        "Residenza",
+        "Reddito",
+        "Esito documentale"
+      ],
+      "rows": [
+        [
+          "CIT-2041",
+          "Nubi Arvela",
+          "Presente",
+          "Da verificare",
+          "Mancante",
+          "Incompleta"
+        ],
+        [
+          "CIT-2042",
+          "Vela Lirune",
+          "Presente",
+          "Presente",
+          "Presente",
+          "Controllo in corso"
+        ],
+        [
+          "CIT-2043",
+          "Lumo Seravi",
+          "Presente",
+          "Presente",
+          "Presente",
+          "Completa in anteprima"
+        ],
+        [
+          "CIT-2044",
+          "Riva Nelori",
+          "Da verificare",
+          "Mancante",
+          "Mancante",
+          "Da integrare"
+        ]
+      ],
+      "form": [
+        "Codice pratica",
+        "Richiedente",
+        "Identità",
+        "Residenza",
+        "Reddito",
+        "Esito documentale"
+      ]
+    },
+    {
+      "id": "reddito",
+      "title": "Anteprima reddito",
+      "description": "Confronto indicativo tra reddito dichiarato e soglia di riferimento configurata dall'ufficio. Non costituisce decisione sulla domanda.",
+      "metrics": [
+        {
+          "label": "Soglia configurata",
+          "value": "€ 26.000"
+        },
+        {
+          "label": "Coerenti in anteprima",
+          "value": "2"
+        },
+        {
+          "label": "Da approfondire",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice pratica",
+        "Richiedente",
+        "Reddito dichiarato",
+        "Periodo considerato",
+        "Soglia di riferimento",
+        "Esito preliminare"
+      ],
+      "rows": [
+        [
+          "CIT-2041",
+          "Nubi Arvela",
+          "€ 18.400",
+          "Ultimo anno disponibile",
+          "€ 26.000",
+          "Verificare documentazione"
+        ],
+        [
+          "CIT-2042",
+          "Vela Lirune",
+          "€ 24.800",
+          "Ultimo anno disponibile",
+          "€ 26.000",
+          "Approfondire criteri applicabili"
+        ],
+        [
+          "CIT-2043",
+          "Lumo Seravi",
+          "€ 27.200",
+          "Ultimo anno disponibile",
+          "€ 26.000",
+          "Coerente in anteprima"
+        ],
+        [
+          "CIT-2044",
+          "Riva Nelori",
+          "Non indicato",
+          "Non disponibile",
+          "€ 26.000",
+          "Impossibile valutare"
+        ]
+      ],
+      "form": [
+        "Codice pratica",
+        "Richiedente",
+        "Reddito dichiarato",
+        "Periodo considerato",
+        "Soglia di riferimento",
+        "Esito preliminare"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "blu-istituzionale",
+    "fonts": "istituzionale"
+  }
+}
