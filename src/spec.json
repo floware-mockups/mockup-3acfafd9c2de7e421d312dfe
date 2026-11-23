@@ -271,6 +271,77 @@
         "Soglia di riferimento",
         "Esito preliminare"
       ]
+    },
+    {
+      "id": "controlli",
+      "title": "Controlli",
+      "description": "Registro dei controlli preliminari sulle pratiche di esempio.",
+      "metrics": [
+        {
+          "label": "Controlli registrati",
+          "value": "6"
+        },
+        {
+          "label": "Da verificare o integrare",
+          "value": "3"
+        },
+        {
+          "label": "Completati",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Codice pratica",
+        "Data controllo",
+        "Area verificata",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "CIT-2041",
+          "14/04/2026",
+          "Documenti",
+          "Da verificare"
+        ],
+        [
+          "CIT-2042",
+          "14/04/2026",
+          "Reddito",
+          "In revisione"
+        ],
+        [
+          "CIT-2043",
+          "13/04/2026",
+          "Documenti",
+          "Completata"
+        ],
+        [
+          "CIT-2044",
+          "13/04/2026",
+          "Residenza",
+          "Da integrare"
+        ],
+        [
+          "CIT-2045",
+          "12/04/2026",
+          "Reddito",
+          "Da verificare"
+        ],
+        [
+          "CIT-2046",
+          "12/04/2026",
+          "Identità",
+          "Completata"
+        ]
+      ],
+      "form": [
+        "Codice pratica",
+        "Data controllo",
+        "Area verificata",
+        "Stato"
+      ],
+      "chartColumn": 0,
+      "statusColumn": 3
     }
   ],
   "theme": {
