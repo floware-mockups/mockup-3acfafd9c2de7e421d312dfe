@@ -62,7 +62,8 @@
           "11/04/2026"
         ]
       ],
-      "form": []
+      "form": [],
+      "chartColumn": 0
     },
     {
       "id": "pratiche",
@@ -275,5 +276,14 @@
   "theme": {
     "palette": "blu-istituzionale",
     "fonts": "istituzionale"
-  }
+  },
+  "custom": [
+    {
+      "name": "MemoriaDifensiva",
+      "title": "Preparazione memoria difensiva",
+      "description": "Redazione guidata con dati collegati, motivi ordinabili e bozza da rivedere.",
+      "role": "section",
+      "position": "top"
+    }
+  ]
 }
